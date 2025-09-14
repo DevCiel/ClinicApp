@@ -1,0 +1,1 @@
+alert("Clinic App working")
