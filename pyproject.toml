@@ -1,18 +1,16 @@
 [project]
 name = "clinicapp"
-authors = [
-    { name = "SRIAAS", email = "webdevelopersriaas@gmail.com"}
-]
 description = "Custom fields and logic (Auto draft invoice & payments from Patient Encounter)"
+authors = [{ name = "SRIAAS", email = "webdevelopersriaas@gmail.com"}]
 requires-python = ">=3.10"
 readme = "README.md"
-dynamic = ["version"]
 dependencies = [
-    # "frappe~=15.0.0" # Installed and managed by bench.
+    # "frappe~=15.0.0"
 ]
+dynamic = ["version"]
 
 [build-system]
-requires = ["flit_core >=3.4,<4"]
+requires = ["flit_core>=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 # These dependencies are only installed when developer mode is enabled
