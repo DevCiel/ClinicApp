@@ -17,7 +17,7 @@
   ],
   "fields": [
     {
-      "fieldname": "sr_reason_name"
+      "fieldname": "sr_reason_name",
       "label": "Reason Name",
       "fieldtype": "Data",
       "reqd": 1,
