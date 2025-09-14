@@ -26,11 +26,11 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 app_include_css = "/assets/clinicapp/css/clinicapp.css"
-app_include_js = "/assets/clinicapp/js/clinicapp.js"
+# app_include_js = "/assets/clinicapp/js/clinicapp.js"
 
 # include js, css files in header of web template
 web_include_css = "/assets/clinicapp/css/clinicapp.css"
-web_include_js = "/assets/clinicapp/js/clinicapp.js"
+# web_include_js = "/assets/clinicapp/js/clinicapp.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "clinicapp/public/scss/website"
