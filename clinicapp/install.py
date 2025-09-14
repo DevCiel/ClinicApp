@@ -17,13 +17,13 @@ def _make_patient_fields():
     NOTE:
       - Ensure the following DocTypes exist in your system:
           • Medical Department (standard in Healthcare)
-          • Patient Disable Reason (your custom DocType)
-          • Custom Patient Invoice View (Child Table DocType)
-          • Custom Patient Payment View (Child Table DocType)
+          • SR Patient Disable Reason (Disable Reason DocType)
+          • SR Patient Invoice View (Child Table DocType)
+          • SR Patient Payment View (Child Table DocType)
       - 'Patient Encounter' is standard in Healthcare.
     """
 
-    patient_custom_fields = {
+    custom_fields = {
         "Patient": [
 
             # --- DETAILS TAB (no new Tab Break; placed after core 'first_name') ---
@@ -147,7 +147,7 @@ def _make_patient_fields():
     }
 
     # Create / update
-    create_custom_fields(patient_custom_fields, ignore_validate=True)
+    create_custom_fields(custom_fields, ignore_validate=True)
 
 def _make_status_editable():
     """Make core Patient.status editable (remove read-only)."""
