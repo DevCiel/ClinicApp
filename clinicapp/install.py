@@ -1,4 +1,3 @@
-# apps/clinicapp/clinicapp/install.py
 import frappe
 from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 
@@ -7,7 +6,11 @@ def after_install():
     _make_status_editable()
 
 def after_migrate():
-    # idempotent: safe to run on every migrate
+    for dn in ("sr_patient_disable_reason","sr_patient_invoice_view","sr_patient_payment_view"):
+        try:
+            frappe.reload_doc("clinicapp", "doctype", dn)
+        except Exception:
+            pass
     _make_patient_fields()
     _make_status_editable()
 
