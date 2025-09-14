@@ -5,6 +5,10 @@ app_description = "Custom fields and logic (Auto draft invoice & payments from P
 app_email = "webdevelopersriaas@gmail.com"
 app_license = "mit"
 
+# apps/clinicapp/clinicapp/hooks.py
+after_install = "clinicapp.install.after_install"
+after_migrate = "clinicapp.install.after_migrate"
+
 # Apps
 # ------------------
 
