@@ -24,6 +24,8 @@ app_license = "mit"
 # Includes in <head>
 # ------------------
 
+app_include_css = "/public/css/clinicapp.css"
+
 # include js, css files in header of desk.html
 # app_include_css = "/assets/clinicapp/css/clinicapp.css"
 # app_include_js = "/assets/clinicapp/js/clinicapp.js"
