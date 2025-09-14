@@ -57,7 +57,7 @@ def _make_patient_fields():
                 "fieldname": "sr_followup_disable_reason",
                 "label": "Followup Disable Reason",
                 "fieldtype": "Link",
-                "options": "Patient Disable Reason",
+                "options": "SR Patient Disable Reason",
                 "insert_after": "status"
             },
             {
@@ -79,7 +79,7 @@ def _make_patient_fields():
                 "fieldname": "sr_sales_invoice_list",
                 "label": "Sales Invoices",
                 "fieldtype": "Table",
-                "options": "Custom Patient Invoice View",  # child table doctype
+                "options": "SR Patient Invoice View",  # child table doctype
                 "read_only": 1,
                 "insert_after": "sr_invoices_tab"
             },
@@ -95,7 +95,7 @@ def _make_patient_fields():
                 "fieldname": "sr_payment_entry_list",
                 "label": "Payment Entries",
                 "fieldtype": "Table",
-                "options": "Custom Patient Payment View",  # child table doctype
+                "options": "SR Patient Payment View",  # child table doctype
                 "read_only": 1,
                 "insert_after": "sr_payments_tab"
             },
